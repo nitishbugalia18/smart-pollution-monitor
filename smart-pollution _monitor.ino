@@ -1,7 +1,5 @@
 /*
  * IoT Smart Pollution & Safety Monitoring System
- * Team: Nitish Bugalia (23BEC1266), Sachin Kumar Payal (23BEC1033)
- * Submitted to: Sofana Reka S
  *
  * Hardware: ESP8266 (NodeMCU)
  * Sensors: MQ-135 (gas/air quality), MQ-3 (alcohol), DHT11 (temp & humidity)
