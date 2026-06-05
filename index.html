@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IoT Smart Pollution Monitor</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; background: #f0f4f8; color: #333; }
+    header { background: #1a1a2e; color: white; padding: 40px 20px; text-align: center; }
+    header h1 { font-size: 28px; margin-bottom: 10px; }
+    header p { font-size: 15px; color: #aaa; }
+    .section { max-width: 800px; margin: 30px auto; background: white; border-radius: 12px; padding: 30px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
+    h2 { color: #1a1a2e; margin-bottom: 15px; border-left: 4px solid #e94560; padding-left: 10px; }
+    p { line-height: 1.8; margin-bottom: 10px; }
+    .team { display: flex; gap: 20px; flex-wrap: wrap; }
+    .card { background: #f0f4f8; border-radius: 10px; padding: 16px 24px; flex: 1; min-width: 200px; }
+    .card h3 { color: #e94560; margin-bottom: 5px; }
+    .components { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 14px; }
+    .chip { background: #1a1a2e; color: white; border-radius: 8px; padding: 12px 16px; text-align: center; font-size: 14px; }
+    .steps { counter-reset: step; }
+    .step { display: flex; gap: 16px; align-items: flex-start; margin-bottom: 16px; }
+    .step-num { background: #e94560; color: white; border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0; }
+    footer { text-align: center; padding: 30px; color: #888; font-size: 13px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>IoT Smart Pollution & Safety Monitoring System</h1>
+  <p>With Automatic Ventilation and Alcohol-Interlock Control</p>
+  <p style="margin-top:10px; color:#e94560;">VIT Chennai — Electronics & Communication Engineering</p>
+</header>
+
+<div class="section">
+  <h2>About the Project</h2>
+  <p>An IoT-based smart system that continuously monitors air quality, temperature, humidity, and alcohol levels in real time. When unsafe conditions are detected, the system automatically activates a ventilation fan, triggers a buzzer alert, and engages an ignition lock to prevent drunk driving.</p>
+</div>
+
+<div class="section">
+  <h2>Team Members</h2>
+  <div class="team">
+    <div class="card">
+      <h3>Nitish Bugalia</h3>
+      <p>23BEC1266</p>
+    </div>
+    <div class="card">
+      <h3>Sachin Kumar Payal</h3>
+      <p>23BEC1033</p>
+    </div>
+  </div>
+  <p style="margin-top:16px;">Submitted to: <strong>Sofana Reka S</strong></p>
+</div>
+
+<div class="section">
+  <h2>Hardware Components</h2>
+  <div class="components">
+    <div class="chip">ESP8266 NodeMCU</div>
+    <div class="chip">MQ-135 Gas Sensor</div>
+    <div class="chip">MQ-3 Alcohol Sensor</div>
+    <div class="chip">DHT11 Temp & Humidity</div>
+    <div class="chip">Relay Module</div>
+    <div class="chip">Buzzer</div>
+    <div class="chip">Ventilation Fan</div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>How It Works</h2>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <p>Sensors continuously collect gas levels, temperature, humidity, and alcohol data</p>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <p>ESP8266 processes the data and compares with predefined safety thresholds</p>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <p>If unsafe: ventilation fan activates, buzzer sounds, ignition lock engages</p>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <p>Real-time data and alerts are sent to Flask server via WiFi</p>
+    </div>
+    <div class="step">
+      <div class="step-num">5</div>
+      <p>Mobile app receives live notifications and displays sensor readings</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>IoT Smart Pollution & Safety Monitoring System &copy; 2026</p>
+  <p>VIT Chennai — ECE Department</p>
+</footer>
+
+</body>
+</html>
